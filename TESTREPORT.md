@@ -1,0 +1,3 @@
+VERDICT: PASS
+
+Patrick, der Lauf ist sauber: Alle 29 pytest-Tests bestehen (Exit 0), der API-Smoke bestätigt, dass der Server aus RUN.json startet und `/health` mit HTTP 200 antwortet. Die Akzeptanzkriterien AC-01 bis AC-05 sind durch die ausgeführten Tests beobachtbar abgedeckt — Validierung (422 bei leerem Titel, >100 Zeichen, >5 Tags), Anlegen mit ID und `erstellt_am`, Listen inklusive Tag-Filter, Abruf per ID inkl. 404, Löschen mit 204 und leerem Body sowie 404 bei unbekannter ID. Keine Laufzeitfehler, keine Umgebungsmarker, keine verpassten Anforderungen.
